@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing — Premuria</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="site-header">
+      <a class="brand" href="index.html"><img src="assets/premuria-logo.png" alt="Premuria"></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a><a href="privacy.html">Privacy</a><a class="current" href="pricing.html">Pricing</a><a href="why-premuria.html">Why Premuria</a><a href="index.html#faq">FAQ</a><a href="app-preview.html">App preview</a><a href="contact.html">Contact</a></nav>
+    </header>
+<main>
+<section class="section pricing-hero">
+  <p class="eyebrow">ONE SIMPLE PRICE</p>
+  <div class="price-huge"><span class="pound">£</span><span class="price-number">4<span class="decimal-dot">.</span>99</span></div>
+  <h1>One time.</h1>
+  <p class="hero-copy">Pay once for Premuria. No monthly subscription. No annual renewal.</p>
+</section>
+<section class="section soft">
+  <div class="price-explain">
+    <article class="expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Pay once <b class="expand-mark">+</b></h3><p>£4.99 is a one-time purchase, not a recurring charge.</p><div class="expand-content"><p>You buy Premuria once. There is no monthly or annual renewal attached to the basic purchase, so the cost is clear before you start.</p></div></article>
+    <article class="expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Free updates <b class="expand-mark">+</b></h3><p>Premuria updates are included.</p><div class="expand-content"><p>Improvements to the app are intended to remain part of the product you bought. We do not want ordinary product improvements to become a reason to charge you again.</p></div></article>
+    <article class="expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>No surprise subscription <b class="expand-mark">+</b></h3><p>We are not building Premuria around a hidden monthly fee.</p><div class="expand-content"><p>No monthly renewal. No annual renewal. No deliberately confusing “free trial” that quietly turns into a recurring payment. The pricing should stay understandable.</p></div></article>
+    <article class="expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Simple on purpose <b class="expand-mark">+</b></h3><p>The price should be as easy to understand as the app itself.</p><div class="expand-content"><p>Premuria is intentionally focused. The product is designed around a small set of useful care-coordination jobs, and the pricing follows the same principle: one clear product, one clear price.</p></div></article>
+  </div>
+</section><section class="section pricing-close"><h2>IT’S YOURS.</h2><p>£4.99. Once. Yours.</p></section>
+</main><footer>
+      <img src="assets/premuria-logo.png" alt="Premuria">
+      <p>Private by design. Calm by default.</p>
+      <p class="copyright">© 2026 Premuria. All rights reserved.</p>
+    </footer>
+<script>
+document.querySelectorAll('[data-expandable]').forEach(card=>{
+  const toggle=()=>{
+    const open=card.classList.toggle('open');
+    card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    const mark=card.querySelector('.expand-mark');
+    if(mark) mark.textContent=open?'−':'+';
+  };
+  card.addEventListener('click',e=>{
+    if(e.target.closest('a')) return;
+    toggle();
+  });
+  card.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}
+  });
+});
+</script>
+</body></html>

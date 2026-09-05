@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Responsibility — Premuria</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="site-header">
+      <a class="brand" href="index.html"><img src="assets/premuria-logo.png" alt="Premuria"></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a class="current" href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a><a href="privacy.html">Privacy</a><a href="pricing.html">Pricing</a><a href="why-premuria.html">Why Premuria</a><a href="index.html#faq">FAQ</a><a href="app-preview.html">App preview</a><a href="contact.html">Contact</a></nav>
+    </header>
+<main>
+<section class="section page-hero illustrated-hero"><div class="illustrated-copy"><p class="eyebrow">RESPONSIBILITY</p><h1>Everyone can see who is on duty.</h1><p class="hero-copy">A simple shared responsibility view helps care handovers stay clear.</p></div><div class="section-illustration" aria-hidden="true"><svg viewBox="0 0 260 260"><g fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"><circle cx="130" cy="80" r="27"/><circle cx="65" cy="104" r="20"/><circle cx="195" cy="104" r="20"/><path d="M83 194v-25c0-27 21-46 47-46s47 19 47 46v25M32 187v-17c0-22 15-38 36-38M228 187v-17c0-22-15-38-36-38"/><path d="M112 164l14 14 28-32" stroke="#777777"/></g></svg></div></section>
+<section class="section soft"><div class="detail-grid"><article class="detail-card expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>One visible answer<span class="expand-mark">+</span></h3><p>The Circle can see who is responsible today.</p><div class="expand-content"><p>Everyone in the Care Circle can immediately see who is taking responsibility today. It removes the need to ask in a group chat, call around or assume somebody else is handling it.</p></div></article><article class="detail-card expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Less duplication<span class="expand-mark">+</span></h3><p>Two people do not need to assume the other person is handling it.</p><div class="expand-content"><p>When responsibility is visible, two people are less likely to do the same task, and an important task is less likely to be missed because each person thought the other was doing it.</p></div></article><article class="detail-card expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Simple handover<span class="expand-mark">+</span></h3><p>Responsibility can be changed when family arrangements change.</p><div class="expand-content"><p>Plans change. A handover should take seconds: the Care Circle can see the new responsibility clearly without rebuilding the day through messages and calls.</p></div></article><article class="detail-card expandable-card" data-expandable tabindex="0" aria-expanded="false"><h3>Shared context<span class="expand-mark">+</span></h3><p>Responsibility sits alongside the same medicines, confirmations and notes.</p><div class="expand-content"><p>Who is on duty is not isolated information. It sits beside the same medicines, confirmations and notes, giving everyone the context needed to understand the day.</p></div></article></div></section>
+<section class="section care-examples"><div class="section-intro"><p class="eyebrow">IN PRACTICE</p><h2>See the handover, not another message thread.</h2><p>Simple examples from the Premuria interface show the same responsibility from different points in the day.</p></div><div class="care-example-grid"><article class="ui-shot"><span>WHO’S ON DUTY</span><h3>Care Circle</h3><div class="person on"><b>M</b><p><strong>Matteo</strong><small>ON DUTY</small></p></div><div class="shift">Today <strong>08:00 → 18:00</strong></div><div class="person"><b>A</b><p><strong>Anna</strong><small>Family</small></p></div></article><article class="ui-shot"><span>HANDOVER</span><h3>Responsibility</h3><div class="handover-row"><b>Anna</b><i>→</i><b>Matteo</b></div><p class="ui-muted">Responsibility changed · 08:00</p><div class="ui-confirm">Matteo is now on duty</div></article><article class="ui-shot"><span>HISTORY</span><h3>Today</h3><div class="timeline"><p><b>08:02</b><span>Paracetamol · Done<br><strong>Matteo</strong></span></p><p><b>08:00</b><span>On duty changed<br><strong>Matteo</strong></span></p><p><b>07:45</b><span>Morning note added<br><strong>Anna</strong></span></p></div></article></div></section></main><footer>
+      <img src="assets/premuria-logo.png" alt="Premuria">
+      <p>Private by design. Calm by default.</p>
+      <p class="copyright">© 2026 Premuria. All rights reserved.</p>
+    </footer>
+<script>
+document.querySelectorAll('[data-expandable]').forEach(card=>{
+  const toggle=()=>{
+    const open=card.classList.toggle('open');
+    card.setAttribute('aria-expanded', open ? 'true' : 'false');
+    const mark=card.querySelector('.expand-mark');
+    if(mark) mark.textContent=open?'−':'+';
+  };
+  card.addEventListener('click',e=>{
+    if(e.target.closest('a')) return;
+    toggle();
+  });
+  card.addEventListener('keydown',e=>{
+    if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}
+  });
+});
+</script>
+</body></html>
