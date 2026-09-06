@@ -24,3 +24,11 @@ Design locks:
 - Sarah photo asset must remain included for the Care Circle mockup.
 
 Website 32: Terms & Conditions page redesigned as a full Premuria legal page.
+
+Premuria Website 33 mobile/responsive release:
+- Full responsive optimisation for phone widths, including iPhone 13 mini class screens.
+- Mobile hamburger navigation on every page.
+- All page layouts, typography, spacing, cards, mockups, forms, FAQ, legal pages and footer adapt to mobile.
+- Premuria favicon and Apple Touch Icon included on every page.
+- Desktop layout intentionally preserved.
+- HOME PHOTO remains locked and unchanged.

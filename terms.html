@@ -1,9 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Terms &amp; Conditions | Premuria</title><link rel="stylesheet" href="styles.css"></head><body>
-<header class="site-header"><a class="brand" href="index.html"><img src="assets/premuria-logo.png" alt="Premuria"></a>
-<nav class="main-nav"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a><a href="app-preview.html">App preview</a><a href="why-premuria.html">Why Premuria</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></nav></header>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Terms &amp; Conditions | Premuria</title><link href="styles.css" rel="stylesheet"/><link href="assets/favicon.ico" rel="icon" type="image/x-icon"/><link href="assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/></head><body>
+<header class="site-header"><a class="brand" href="index.html"><img alt="Premuria" src="assets/premuria-logo.png"/></a><button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav class="main-nav" id="main-navigation"><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a><a href="app-preview.html">App preview</a><a href="why-premuria.html">Why Premuria</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></nav></header>
 <main class="terms-main">
-<section class="terms-hero"><div class="terms-wrap"><span class="eyebrow">LEGAL</span><h1>Terms &amp;<br>Conditions.</h1><p class="terms-lead">Clear terms for using Premuria, written to be as straightforward as the product itself.</p><div class="terms-meta"><span>Last updated</span><strong>6 September 2026</strong></div></div></section>
+<section class="terms-hero"><div class="terms-wrap"><span class="eyebrow">LEGAL</span><h1>Terms &amp;<br/>Conditions.</h1><p class="terms-lead">Clear terms for using Premuria, written to be as straightforward as the product itself.</p><div class="terms-meta"><span>Last updated</span><strong>6 September 2026</strong></div></div></section>
 <section class="terms-body"><div class="terms-wrap terms-layout"><aside class="terms-index"><strong>ON THIS PAGE</strong><a href="#about">1. About Premuria</a><a href="#using">2. Using Premuria</a><a href="#accounts">3. Accounts &amp; Care Circles</a><a href="#medicines">4. Medicines &amp; reminders</a><a href="#payments">5. Payments</a><a href="#privacy">6. Privacy &amp; data</a><a href="#ip">7. Intellectual property</a><a href="#availability">8. Availability</a><a href="#liability">9. Responsibility &amp; liability</a><a href="#termination">10. Ending use</a><a href="#changes">11. Changes to these terms</a><a href="#contact">12. Contact</a></aside>
 <article class="terms-content">
 <div class="terms-callout"><strong>Important medical notice</strong><p>Premuria helps families organise everyday care and medicine reminders. It does not provide medical advice, diagnosis or prescriptions, and it is not a substitute for advice from a doctor, pharmacist or other qualified healthcare professional.</p></div>
@@ -21,5 +22,17 @@
 <section id="contact"><span class="terms-number">12</span><h2>Contact</h2><p>Questions about these Terms &amp; Conditions can be sent through the <a href="contact.html">Contact</a> page.</p></section>
 </article></div></section>
 </main>
-<footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><img src="assets/premuria-logo.png" alt="Premuria"><p>Private by design. Calm by default.</p><p class="copyright">© 2026 Premuria. All rights reserved.</p></div><div class="footer-links"><div><h4>PREMURIA</h4><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a></div><div><h4>EXPLORE</h4><a href="app-preview.html">App preview</a><a href="reminders.html">Reminders</a><a href="today.html">Today</a><a href="history.html">History</a></div><div><h4>ABOUT</h4><a href="why-premuria.html">Why Premuria</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div><div><h4>LEGAL</h4><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy</a></div></div></div></footer>
-</body></html>
+<footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><img alt="Premuria" src="assets/premuria-logo.png"/><p>Private by design. Calm by default.</p><p class="copyright">© 2026 Premuria. All rights reserved.</p></div><div class="footer-links"><div><h4>PREMURIA</h4><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="responsibility.html">Care Circle</a><a href="senior-mode.html">Senior Mode</a></div><div><h4>EXPLORE</h4><a href="app-preview.html">App preview</a><a href="reminders.html">Reminders</a><a href="today.html">Today</a><a href="history.html">History</a></div><div><h4>ABOUT</h4><a href="why-premuria.html">Why Premuria</a><a href="pricing.html">Pricing</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div><div><h4>LEGAL</h4><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy</a></div></div></div></footer>
+<script>
+(function(){
+  var button=document.querySelector('.menu-toggle');
+  var nav=document.querySelector('.main-nav');
+  if(!button||!nav) return;
+  nav.id='main-navigation';
+  function closeMenu(){document.body.classList.remove('menu-open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation');}
+  button.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');button.setAttribute('aria-expanded',open?'true':'false');button.setAttribute('aria-label',open?'Close navigation':'Open navigation');});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+  window.addEventListener('resize',function(){if(window.innerWidth>900) closeMenu();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') closeMenu();});
+})();
+</script></body></html>
