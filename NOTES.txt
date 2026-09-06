@@ -22,3 +22,5 @@ Design locks:
 - Approved colour palette must not be changed.
 - All phone mockup frames use slim 50% grey #777777, not black.
 - Sarah photo asset must remain included for the Care Circle mockup.
+
+Website 32: Terms & Conditions page redesigned as a full Premuria legal page.
