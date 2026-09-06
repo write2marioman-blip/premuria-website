@@ -517,3 +517,56 @@ footer p,footer .copyright{color:#fff!important}
 .add-med-field{min-height:62px;border:1px solid #ddd;border-radius:12px;margin:14px 0;display:grid;grid-template-columns:30px 1fr;gap:8px;align-items:center;padding:0 13px;color:#444;box-sizing:border-box}.add-med-field b{font-size:1.05rem}.add-med-field span{font-size:.95rem}.add-med-field.split{grid-template-columns:30px 1fr auto}.add-med-field em{font-style:normal;border-left:1px solid #eee;padding-left:14px}
 .add-med-next{width:100%;border:0;border-radius:10px;background:#0F7C6D;color:#fff;font-weight:900;font-size:.95rem;padding:16px;margin-top:18px}
 @media(max-width:900px){.add-medicine-phone{justify-self:center;width:240px;height:490px}}
+
+
+/* Premuria final refinement: slim phones, full navigation footer, tall palette */
+.site-footer{background:#0F7C6D!important;color:#fff!important;padding:58px 5vw!important;text-align:left!important}
+.site-footer .footer-inner{max-width:1420px;margin:0 auto;display:grid;grid-template-columns:minmax(240px,1.15fr) 3fr;gap:70px;align-items:start}
+.site-footer .footer-brand img{width:165px!important;max-width:100%;filter:brightness(0) invert(1);margin:0 0 18px!important}
+.site-footer .footer-brand p{margin:8px 0;color:#fff!important}
+.site-footer .footer-links{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:38px}
+.site-footer .footer-links div{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.site-footer .footer-links h4{font-size:.78rem;letter-spacing:.16em;margin:4px 0 10px;color:#fff}
+.site-footer .footer-links a{color:#fff!important;text-decoration:none;font-size:.96rem;line-height:1.35;opacity:.94}
+.site-footer .footer-links a:hover{text-decoration:underline;opacity:1}
+
+/* One thinner, more elegant frame treatment for every phone mockup. */
+.phone{border-width:4px!important;padding:4px!important;border-radius:32px!important;background:#777!important;border-color:#777!important}
+.phone-notch{top:10px!important;height:15px!important;width:66px!important;background:#777!important}
+.phone-screen{border-radius:25px!important;padding-top:42px!important}
+.hero-phone,.appstore-phone{border-width:5px!important;padding:5px!important;border-radius:36px!important;background:#777!important;border-color:#777!important}
+.hero-phone-notch,.appstore-notch{top:10px!important;height:15px!important;width:68px!important;background:#777!important}
+.hero-phone-screen,.appstore-screen{border-radius:29px!important}
+.mini-phone{border-width:5px!important;border-color:#777!important;background:#777!important;border-radius:30px!important}
+.add-medicine-phone{border-width:5px!important}
+
+/* Keep the approved palette colours, but display them as tall slim bars. */
+.brand-palette{padding-top:76px!important;padding-bottom:82px!important}
+.palette-grid{grid-template-columns:repeat(6,minmax(70px,1fr))!important;gap:18px!important;align-items:end!important;max-width:1050px}
+.palette-grid div{justify-items:stretch!important}
+.palette-grid span{height:330px!important;border-radius:8px!important}
+.palette-grid b{text-align:left!important}
+@media(max-width:900px){
+ .site-footer .footer-inner{grid-template-columns:1fr;gap:38px}
+ .site-footer .footer-links{grid-template-columns:repeat(2,1fr)}
+ .palette-grid{grid-template-columns:repeat(3,1fr)!important}
+ .palette-grid span{height:220px!important}
+}
+@media(max-width:560px){.site-footer .footer-links{grid-template-columns:1fr 1fr;gap:28px}.palette-grid span{height:170px!important}}
+
+/* 2026-09-06 approved footer balance and ultra-slim 50% grey phone hardware. */
+.site-footer{padding:54px 5vw!important}
+.site-footer .footer-inner{max-width:1420px!important;grid-template-columns:minmax(300px,1.25fr) 3fr!important;gap:78px!important;align-items:center!important}
+.site-footer .footer-brand img{width:205px!important;margin-bottom:20px!important}
+.site-footer .footer-links{align-items:start!important;gap:46px!important}
+.site-footer .footer-links h4{margin-top:0!important}
+
+.phone{border-width:3px!important;padding:3px!important;border-color:#777!important;background:#777!important;border-radius:29px!important}
+.phone-notch{background:#777!important;height:13px!important;top:9px!important}
+.phone-screen{border-radius:23px!important}
+.hero-phone,.appstore-phone{border-width:3px!important;padding:3px!important;border-color:#777!important;background:#777!important;border-radius:32px!important}
+.hero-phone-notch,.appstore-notch{background:#777!important;height:14px!important;top:9px!important}
+.hero-phone-screen,.appstore-screen{border-radius:27px!important}
+.mini-phone{border-width:3px!important;border-color:#777!important;background:#777!important;border-radius:28px!important}
+.add-medicine-phone{border-width:3px!important}
+@media(max-width:900px){.site-footer .footer-inner{grid-template-columns:1fr!important;gap:36px!important;align-items:start!important}.site-footer .footer-brand img{width:185px!important}}
