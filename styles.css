@@ -570,3 +570,8 @@ footer p,footer .copyright{color:#fff!important}
 .mini-phone{border-width:3px!important;border-color:#777!important;background:#777!important;border-radius:28px!important}
 .add-medicine-phone{border-width:3px!important}
 @media(max-width:900px){.site-footer .footer-inner{grid-template-columns:1fr!important;gap:36px!important;align-items:start!important}.site-footer .footer-brand img{width:185px!important}}
+
+/* Website 31 navigation/legal/app-download refinements */
+.download-app-button{display:inline-block;margin-top:22px;padding:14px 24px;border-radius:10px;background:#0F7C6D;color:#fff!important;text-decoration:none;font-weight:900;letter-spacing:.02em}
+.download-app-button:hover{filter:brightness(.95)}
+.legal-page{max-width:900px}.legal-page h1{font-size:clamp(3rem,7vw,6rem);margin:.15em 0 .35em}.legal-page h2{margin-top:34px;font-size:1.45rem}.legal-page p{font-size:1.08rem;line-height:1.7;color:#555}.legal-page a{color:#0F7C6D;font-weight:800}

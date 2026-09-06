@@ -1,0 +1,24 @@
+PREMURIA WEBSITE NOTES
+
+Website status: approved design. Do not alter the Home photo.
+
+Future multilingual + adaptive website requirement:
+- Detect browser language.
+- Optionally detect country/region.
+- Responsive adaptation for phone, tablet and desktop.
+- Separate language versions such as /en/, /it/, /fr/.
+- Manual language selector always available.
+- Never force language solely based on IP/location.
+
+App code master copy:
+- GitHub private repository = safe master copy of the app code.
+- App Store = where customers eventually download Premuria.
+
+QA still to do:
+- Test website across different screen sizes/devices.
+
+Design locks:
+- Home photo must not be changed.
+- Approved colour palette must not be changed.
+- All phone mockup frames use slim 50% grey #777777, not black.
+- Sarah photo asset must remain included for the Care Circle mockup.
